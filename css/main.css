@@ -1,326 +1,429 @@
-/* CSS Document */
+    /* CSS Document */
+
 body {
     color: #FFF;
 }
+
+
 /*
 .wrapper {
     max-width: 1200px;
     padding: 0 5%;
 }
 */
-.terms-wrapper{
-	color: #333333;
+
+.terms-wrapper {
+    color: #333333;
     padding-left: 420px;
-    padding-top: 102px; 
+    padding-top: 102px;
     padding-right: 420px;
     padding-bottom: 50px;
 }
+
 .layout-pad {
     padding-right: 120px;
     padding-left: 120px;
     margin: auto;
 }
+
 .logo {
     height: auto;
     width: 138px;
 }
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
   GLOBAL STYLES
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-h1, h2, h3, h4, h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Proxima Nova";
 }
+
 h1 {
     font-size: 70px;
     line-height: 71px;
     font-weight: 100;
 }
+
 .home-h1 {
     font-weight: 900;
     line-height: 61px;
     font-size: 60px;
 }
+
 h3 {
     font-size: 44px;
     font-weight: 100;
     line-height: 50px;
     letter-spacing: 1.63px;
 }
+
 h4 {
     color: #FFF;
     font-size: 44px;
     font-weight: bold;
     line-height: 30px;
 }
+
 h5 {
     font-size: 22px;
     font-weight: bold;
     line-height: 27px;
 }
+
 .icons {
     height: 14px;
     width: 13px;
     font-size: 14px;
     line-height: 14px;
 }
+
+
 /*--HR--*/
+
 hr {
     width: 80px;
     padding-left: 0;
 }
+
 .hr-1 {
     height: 1px;
 }
+
 .hr-2 {
     height: 2px;
 }
+
 .hr-5 {
     height: 5px;
 }
+
 .hr-10 {
     height: 10px;
 }
+
 hr.yellow-4 {
     border-bottom: 4px solid #FDD508;
 }
+
 hr.yellow-7 {
     border-bottom: 7px solid #EDC018;
 }
+
 hr.yellow-2 {
     border-bottom: 5px solid #EDC018;
 }
+
 hr.light-grey-1 {
     border-bottom: 1px solid #D8D8D8;
 }
+
 .width-5 {
     width: 5%
 }
+
 .width-8 {
     width: 8%
 }
+
 .width-10 {
     width: 10%;
 }
+
 .width-15 {
     width: 15%
 }
+
 .width-40 {
     width: 40px;
 }
+
 .width-80 {
     width: 80px;
 }
+
 .width-20 {
     width: 20%;
 }
+
 .width-150 {
     width: 150px;
 }
+
 .width-180 {
     width: 20%;
 }
+
+
 /*--Element Spacing -- */
 
 .mar-left-0 {
     margin-left: 0 !important;
 }
+
 .mar-left-1 {
     align-content: center !important;
 }
+
 .mar-right-0 {
     margin-right: 0px;
 }
+
 .pad-top-20 {
     padding-top: 20px;
 }
+
 .pad-top-100 {
     padding-top: 100px;
 }
+
 .pad-bot-10 {
     padding-bottom: 10px;
 }
+
 .pad-bot-50 {
     padding-bottom: 50px !important;
 }
+
 .pad-bot-100 {
     padding-bottom: 100px !important;
 }
-.pad-left-0{
+
+.pad-left-0 {
     padding-left: 0px !important;
 }
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     START : CONTENT
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+
 /************************************************************************************/
+
 
 /* The sidebar menu */
+
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 90px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 134px;
-  background-color: transparent; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 200px;
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 90px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 134px;
+    background-color: transparent;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 200px;
 }
+
 
 /* The navigation menu links */
+
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: #818181;
-  display: block;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #818181;
+    display: block;
 }
+
+
 /* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
+
 
 /* Style page content */
+
 .main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+    margin-left: 160px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
 }
 
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;
-   right: 0;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+        right: 0;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
 
 /************************************************************************************/
 
-.terms-link{
+.terms-link {
     color: #4A90E2;
     line-height: 62px;
 }
-.terms-top{
+
+.terms-top {
     padding-top: 30px;
-    
     padding-left: 129px;
 }
-.terms-header{
-	font-family: "Proxima Nova";	
-	font-size: 24px;	
-	font-weight: bold;	
-	line-height: 29px;
+
+.terms-header {
+    font-family: "Proxima Nova";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
 }
-.terms-content-header{
-	font-size: 16px;	
-	font-weight: bold;	
-	line-height: 48px;
+
+.terms-content-header {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 48px;
 }
-.hero-content a{
+
+.hero-content a {
     color: white;
-/*    text-align: center;*/
+    /*    text-align: center;*/
     padding-left: 10px;
 }
-.our-partners-li a{
+
+.our-partners-li a {
     color: white;
 }
+
 .text-16 {
     color: #FFFFFF;
     font-family: Lato;
     font-size: 16px;
     line-height: 23px;
 }
+
 .hero {
     padding-top: 40px;
     background: url(../img/Bg%20Image.jpg) center;
     background-size: cover;
 }
+
 .hero-content {
     padding-top: 120px;
 }
+
 .dark-gray-bg {
     background-color: #494949;
 }
+
 .media-icons {
     padding-bottom: 15%
 }
+
 .social-icons a {
     padding-left: 20px;
     color: #FFFFFF;
     font-family: "Font Awesome 5 Brands";
 }
 
-.menu-links a{
+.menu-links a {
     float: right;
     padding-right: 0px;
     color: #FFF
 }
-.menu-links .menu > li > a{
+
+.menu-links .menu>li>a {
     padding-right: 0px;
 }
-.column-0{
+
+.column-0 {
     padding-right: 0px;
 }
+
 .light-gray-bg {
     background-color: #979797;
 }
+
 .light-dark-bg {
     background-color: #333333;
 }
+
 .dark-bg {
     background-color: #000000;
 }
+
 .connect-process {
     padding-top: 60px;
 }
 
- .left-col {
-    padding-left:0 !important;
+.left-col {
+    padding-left: 0 !important;
 }
+
 .stats {
     padding-top: 70px;
 }
+
 .counter {
     color: #FCD435;
-    font-family: "Bebas Neue";
+    font-family: 'Bebas Neue', cursive;
     font-size: 90px;
     font-weight: 300;
     line-height: 100px;
 }
+
 .stats-title-bot {
     padding-bottom: 100px;
 }
+
 .counter-title {
     color: #D8D8D8;
     font-family: Lato;
     font-size: 24px;
     line-height: 23px;
 }
+
 .title-partners {
     font-family: Lato;
     font-size: 18px;
     line-height: 1.4;
 }
+
 .intro-content {
     text-align: center;
 }
+
 .our-partners {
     padding-top: 93px;
     padding-bottom: 32px;
 }
+
 .content-pad {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .card-body {
     padding-bottom: 20px;
     margin-top: auto;
     padding-left: 3%;
 }
-.connect-pad-0{
+
+.connect-pad-0 {
     padding-top: 50px;
     padding-bottom: 100px;
 }
+
 .connect-0 {
     opacity: 0.5;
     color: #9B9B9B;
@@ -328,22 +431,26 @@ hr.light-grey-1 {
     font-weight: 900;
     line-height: 99px;
 }
+
 .connect-steps {
     font-size: 22px;
     line-height: 20px;
     font-weight: bold;
     color: #FFF;
 }
+
 .connect-steps-02 {
     color: #FFFFFF;
     font-family: Lato;
     font-size: 14px;
     line-height: 20px;
 }
+
 .layout {
     background-image: url(../img/ch.jpg);
     background-size: cover;
 }
+
 .partners-card {
     border: none;
     border-radius: 3px;
@@ -351,148 +458,181 @@ hr.light-grey-1 {
     height: 300px;
     text-align: center;
 }
-.partners-pad{
-	padding-top: 30px;
+
+.partners-pad {
+    padding-top: 30px;
     padding-bottom: 100px;
 }
+
 .partners-card:hover {
     background-color: #FFFFFF;
 }
+
 .card-content-0 {
     padding-left: 40px;
     padding-right: 20px;
     padding-top: 164px;
     background-color: #656565;
 }
+
 .card-content {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
 }
+
 .connect-card {
     border: none;
     border-radius: 0px;
     height: 400px;
     background-color: #656565;
-	/*margin-right:  0px;*/
+    /*margin-right:  0px;*/
 }
+
 .connect-card:hover {
     background-color: #D8D8D8;
 }
+
 .partners-p {
     color: #333333;
     font-family: Lato;
     font-size: 14px;
     line-height: 23px;
 }
+
 .pad-col {
     padding-top: 20px;
     padding-bottom: 100px;
 }
+
 .pad-lft {
     padding-left: 0px;
 }
+
+
 /*
 .subscribe-top{
 	padding-top: 100px;
 }
 */
+
 .subscribe {
     padding-top: 4rem;
     padding-bottom: 3rem;
     background-image: url(../img/Subsciption%20Image@2x.png);
     background-size: cover;
 }
+
 .subscribe p {
     font-size: 12px;
     line-height: 20px;
 }
+
 .simple-subscription-form {
     padding-left: 600px;
     padding-right: 100px;
     border-radius: 0;
 }
+
 .simple-subscription-form .button {
     padding: 46px, 17px;
     margin-bottom: 0;
     border-radius: 0 0 0 0;
 }
+
 .yellow-button {
     background-color: #FDD508;
 }
+
 .img-0 {
     padding-left: 67px;
     padding-right: 66px;
     padding-top: 7px;
 }
+
 .img-1 {
     padding-left: 49px;
     padding-right: 49px;
-/*    padding-top: 27px;*/
+    /*    padding-top: 27px;*/
     padding-bottom: 24px;
 }
+
 .img-2 {
     padding-left: 100px;
     padding-right: 101px;
     padding-top: 45px;
     padding-bottom: 28px;
 }
+
 .img-3 {
     padding-left: 74px;
     padding-right: 73px;
     padding-top: 42px;
     padding-bottom: 37px;
 }
+
 .img-4 {
     padding-left: 24px;
     padding-right: 23px;
     padding-top: 30px;
     padding-bottom: 22px;
 }
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
      FOOTER
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 .footer {
     font-family: Lato;
 }
+
 .footer-p {
     color: #9B9B9B;
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
 }
+
 .footer-contacts {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
 }
+
 .footer-contacts-28 {
     font-size: 28px;
     font-weight: 500;
     line-height: 34px;
 }
+
 .footer-contacts-18 {
     color: #9B9B9B;
     font-size: 18px;
     line-height: 22px;
     padding-top: 18px;
 }
+
 .footer-contacts-12 {
     color: #9B9B9B;
     font-size: 12px;
     line-height: 20px;
     padding-top: 20px;
 }
+
 .location-info {
     padding-top: 89px;
 }
+
 .pad-copyright {
     padding-top: 103px;
 }
+
 .stats-0 {
     float: left;
     margin: 5px;
 }
+
 .count {
     margin-left: 40px;
     margin-right: 40px;
@@ -504,107 +644,96 @@ hr.light-grey-1 {
     font-weight: 300;
     line-height: 144px;
 }
+
 .white-text {
     color: #FFF;
 }
 
 
-
-
-
-
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
    START : MEDIA QUERIES
    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
 /* Small only */
+
 @media screen and (max-width: 39.9375em) {
-.media-icons {
-    padding-bottom: 45%
-}
-.hero-content {
-    padding-top: 100px;
-}
-p {
-    font-size: 13px;
-    line-height: 15px;
-}
-h1 {
-    font-size: 44px;
-    line-height: 41px;
-    font-weight: 100;
-}
-.connect-card {
-    border: none;
-    border-radius: 0px;
-    height: 270px;
-    background-color: #656565;
-}
-.layout-pad {
-    padding: 0 1%;
-    padding-top: 30px;
-}
-.subscribe {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    background-image: url(../img/Subsciption%20Image@2x.png);
-    background-size: cover;
-}
-.location-info {
-    padding-top: 49px;
-}
-.pad-copyright {
-    padding-top: 40px;
-}
-
-.partners-pad{
-	padding-top: 15px;
-    padding-bottom: 50px;
-
-}
-h4 {
-    color: #FFF;
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 37px;
-}
-.hr-10{
-    height: 0px;
-}
-.home-h1 {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 31px;
-}
-.counter {
-    color: #FCD435;
-    font-family: "Bebas Neue";
-    font-size: 40px;
-    font-weight: 300;
-}
-.stats-title-bot {
-    padding-bottom: 0px;
-}
-.our-partners {
-    padding-top: 70px;
-    padding-bottom: 20px;
-}
- .partners-pad-bot{
-    padding-bottom: 50px;
- }
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-}
-
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-}
+    .media-icons {
+        padding-bottom: 45%
+    }
+    .hero-content {
+        padding-top: 100px;
+    }
+    p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    h1 {
+        font-size: 44px;
+        line-height: 41px;
+        font-weight: 100;
+    }
+    .connect-card {
+        border: none;
+        border-radius: 0px;
+        height: 270px;
+        background-color: #656565;
+    }
+    .layout-pad {
+        padding: 0 1%;
+        padding-top: 30px;
+    }
+    .subscribe {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        background-image: url(../img/Subsciption%20Image@2x.png);
+        background-size: cover;
+    }
+    .location-info {
+        padding-top: 49px;
+    }
+    .pad-copyright {
+        padding-top: 40px;
+    }
+    .partners-pad {
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+    h4 {
+        color: #FFF;
+        font-size: 38px;
+        font-weight: bold;
+        line-height: 37px;
+    }
+    .hr-10 {
+        height: 0px;
+    }
+    .home-h1 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 31px;
+    }
+    .counter {
+        color: #FCD435;
+        font-family: "Bebas Neue";
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .stats-title-bot {
+        padding-bottom: 0px;
+    }
+    .our-partners {
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+    .partners-pad-bot {
+        padding-bottom: 50px;
+    }
+    /* Medium and up */
+    @media screen and (min-width: 40em) {}
+    /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+    /* Large and up */
+    @media screen and (min-width: 64em) {}
+    /* Large only */
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
