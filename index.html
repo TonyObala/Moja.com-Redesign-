@@ -30,9 +30,13 @@
             <div class="columns medium-3">
                 <a href="index.html"><img src="img/Moja-black.png" class="logo" alt=""></a>
             </div>
+              <a aria-label="mobile menu" class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </a>
         </div>
         <div class="row expanded hero-content">
-            <div class="column medium-10">
+            <div class="column medium-10 small-12">
                 <h1>WE'RE THE ONES<br>
                 </h1>
                 <span class="home-h1">CONNECTING EVERYONE TO THE INTERNET</span>
@@ -40,13 +44,29 @@
             </div>
             <div class="column medium-2 menu-links">
                 <!-- Side navigation -->
-                <div class="sidenav">
+                <!-- <div class="sidenav">
                     <li class=""><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#stats">Stats</a></li>
                     <li><a href="#partners">Partners</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
-                </div>
+                </div> -->
+
+
+                <header class="">
+                <!--  Responsive menu-->
+              
+
+                <nav>
+                    <ul class="top-main-nav">
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                        <li> <a href="moja.html">Stats</a> </li>
+                        <li> <a href="enterprise.html">Partners</a> </li>
+                        <li> <a href="contact.html">Contact us</a> </li>
+                    </ul>
+                </nav>
+    </header>
             </div>
         </div>
         <div class=" row expanded">
@@ -337,6 +357,28 @@
             return val;
         }
     </script>
+    <script src="/js/jquery.js"></script>
+<script src="/js/foundation.min.js"></script>
+    <!--  Power up foundation-->
+    <script>
+        $(document).foundation()
+    </script>
+
+    <!-- Reponsive Top menu -->
+
+    <script>
+        // TOGGLE HAMBURGER & COLLAPSE NAV
+            $('.nav-toggle').on('click', function () {
+                $(this).toggleClass('open');
+                $('.top-main-nav').toggleClass('collapse');
+            });
+            // REMOVE X & COLLAPSE NAV ON ON CLICK
+            $('.menu-left a').on('click', function () {
+                $('.nav-toggle').removeClass('open');
+                $('.top-main-nav').removeClass('collapse');
+            });
+    </script>
+
 </body>
 
 </html>
