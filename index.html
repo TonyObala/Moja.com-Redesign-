@@ -25,16 +25,42 @@
 
     <!----HOME SECTION--->
 
+    
+
     <section id="home" class="hero layout-pad">
-        <div class=" row expanded">
-            <div class="columns medium-3">
-                <a href="index.html"><img src="img/Moja-black.png" class="logo" alt=""></a>
-            </div>
-              <a aria-label="mobile menu" class="nav-toggle">
+
+        <header class="white-bg">
+        <div class="row expanded padded">
+            <div class="small-12 columns ">
+                <div class="header-logo">
+                    
+<a href="index.html"><img src="img/Moja-black.png" class="logo" alt=""></a>
+                </div>
+
+                <!--  Responsive menu-->
+                <a aria-label="mobile menu" class="nav-toggle">
                     <span></span>
                     <span></span>
                 </a>
+
+                <nav class="">
+                    <ul class="top-main-nav">
+                        <li class="current"> <a href="index.html">Home</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                        <li> <a href="moja.html">Stats</a> </li>
+                        <li> <a href="enterprise.html">Partners</a> </li>
+                        <li> <a href="blog.html">Contact Us</a> </li>
+                    </ul>
+                </nav>
+                
+            </div>
         </div>
+    </header>
+        <!-- <div class=" row expanded">
+            <div class="columns medium-3">
+                <a href="index.html"><img src="img/Moja-black.png" class="logo" alt=""></a>
+            </div>
+        </div> -->
         <div class="row expanded hero-content">
             <div class="column medium-10 small-12">
                 <h1>WE'RE THE ONES<br>
@@ -44,18 +70,21 @@
             </div>
             <div class="column medium-2 menu-links">
                 <!-- Side navigation -->
-                <!-- <div class="sidenav">
+                <div class="sidenav">
                     <li class=""><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#stats">Stats</a></li>
                     <li><a href="#partners">Partners</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
-                </div> -->
+                </div>
 
 
-                <header class="">
+                <!-- <header class=""> -->
                 <!--  Responsive menu-->
-              
+                <!-- <a aria-label="mobile menu" class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </a>
 
                 <nav>
                     <ul class="top-main-nav">
@@ -66,7 +95,7 @@
                         <li> <a href="contact.html">Contact us</a> </li>
                     </ul>
                 </nav>
-    </header>
+    </header> -->
             </div>
         </div>
         <div class=" row expanded">
@@ -148,7 +177,25 @@
     <section id="stats" class="layout-pad light-dark-bg">
         <div class="row expanded">
             <div class="connect-process">
-                <div class="columns small-4 medium-4 stats-title-bot">
+                <div class="columns small-4 medi <!--  Power up foundation-->
+                    <script>
+                        $(document).foundation()
+                    </script>
+                
+                    <!-- Reponsive Top menu -->
+                
+                    <script>
+                        // TOGGLE HAMBURGER & COLLAPSE NAV
+                            $('.nav-toggle').on('click', function () {
+                                $(this).toggleClass('open');
+                                $('.top-main-nav').toggleClass('collapse');
+                            });
+                            // REMOVE X & COLLAPSE NAV ON ON CLICK
+                            $('.menu-left a').on('click', function () {
+                                $('.nav-toggle').removeClass('open');
+                                $('.top-main-nav').removeClass('collapse');
+                            });
+                    </script>um-4 stats-title-bot">
                     <h3><strong>Moja</strong> <br> Statistics
                     </h3>
                 </div>
@@ -323,7 +370,29 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/foundation.min.js"></script>
+
+     <!--  Power up foundation-->
+    <script>
+        $(document).foundation()
+    </script>
+
+    <!-- Reponsive Top menu -->
+
+    <script>
+        // TOGGLE HAMBURGER & COLLAPSE NAV
+            $('.nav-toggle').on('click', function () {
+                $(this).toggleClass('open');
+                $('.top-main-nav').toggleClass('collapse');
+            });
+            // REMOVE X & COLLAPSE NAV ON ON CLICK
+            $('.menu-left a').on('click', function () {
+                $('.nav-toggle').removeClass('open');
+                $('.top-main-nav').removeClass('collapse');
+            });
+    </script>
     <script>
         $('.counter').each(function() {
             var $this = $(this),
@@ -357,28 +426,6 @@
             return val;
         }
     </script>
-    <script src="/js/jquery.js"></script>
-<script src="/js/foundation.min.js"></script>
-    <!--  Power up foundation-->
-    <script>
-        $(document).foundation()
-    </script>
-
-    <!-- Reponsive Top menu -->
-
-    <script>
-        // TOGGLE HAMBURGER & COLLAPSE NAV
-            $('.nav-toggle').on('click', function () {
-                $(this).toggleClass('open');
-                $('.top-main-nav').toggleClass('collapse');
-            });
-            // REMOVE X & COLLAPSE NAV ON ON CLICK
-            $('.menu-left a').on('click', function () {
-                $('.nav-toggle').removeClass('open');
-                $('.top-main-nav').removeClass('collapse');
-            });
-    </script>
-
 </body>
 
 </html>
