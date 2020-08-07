@@ -410,7 +410,7 @@
                         /* Black */
                         overflow-x: hidden;
                         /* Disable horizontal scroll */
-                        padding-top: 200px;
+                        padding-top: 240px;
                     }
 
                     .sidenav li{
@@ -816,7 +816,7 @@
                         }
                         .layout-pad {
                             padding: 0 1%;
-                            padding-top: 30px;
+                            /* padding-top: 30px; */
                         }
                         .subscribe {
                             padding-top: 3rem;
